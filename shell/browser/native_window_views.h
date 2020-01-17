@@ -290,6 +290,9 @@ class NativeWindowViews : public NativeWindow,
   // used to determine enabled state
   unsigned int num_modal_children_ = 0;
 
+  // Whether to block Chromium from handling window messages.
+  bool block_chromium_message_handler_ = false;
+
   bool use_content_size_ = false;
   bool movable_ = true;
   bool resizable_ = true;
